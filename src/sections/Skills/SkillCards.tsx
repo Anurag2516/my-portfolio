@@ -33,7 +33,7 @@ const SkillCards = ({ card }: CardsProps) => {
         if (block.type === "labeled-list") {
           return (
             <ul key={index} className="mt-3 pl-6">
-              <li className="list-disc text-lg font-normal text- font-semibold">
+              <li className="list-disc text-lg text- font-semibold">
                 {block.label}:
                 <p className="text-base text-gray-400 font-semibold">
                   {block.items.join(", ")}
