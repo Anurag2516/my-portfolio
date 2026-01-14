@@ -16,7 +16,7 @@ export interface CardsConfig {
 export const skillCardsConifg: CardsConfig[] = [
   {
     id: "Frontend Development",
-    icon: <Code2 size={38} />,
+    icon: <Code2 size={34} />,
     title: "Frontend Development",
     description:
       "I build modern, responsive web interfaces focused on maintainable component structures.",
@@ -35,7 +35,7 @@ export const skillCardsConifg: CardsConfig[] = [
   },
   {
     id: "Tech Stack",
-    icon: <Layers size={38} />,
+    icon: <Layers size={34} />,
     title: "Tech Stack",
     description: "I use modern tools to build reliable front-end applications.",
     blocks: [
@@ -65,7 +65,7 @@ export const skillCardsConifg: CardsConfig[] = [
   },
   {
     id: "Development Approach",
-    icon: <Puzzle size={38} />,
+    icon: <Puzzle size={34} />,
     title: "Approach",
     description:
       "I turn designs and ideas into functional web applications using modern front-end tools.",
