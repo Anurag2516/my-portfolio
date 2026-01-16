@@ -18,7 +18,7 @@ export const projectsData: ProjectConfig[] = [
     featured: true,
     image: deployForgeImg,
     title: "DeployForge",
-    description: "A fully responsive, production-grade SaaS landing page",
+    description: "A fully responsive, production-grade SaaS landing page.",
     languages: ["React", "TailwindCSS", "Javascript", "Motion"],
     bentoVertical: true,
   },
@@ -27,7 +27,7 @@ export const projectsData: ProjectConfig[] = [
     featured: true,
     image: blogVerseHomeImg,
     title: "BlogVerse",
-    description: "A simple and clean blog application",
+    description: "A simple and clean blog application.",
     languages: ["React", "TailwindCSS", "Javascript", "Lottie"],
   },
   {
@@ -35,7 +35,7 @@ export const projectsData: ProjectConfig[] = [
     featured: true,
     image: devDashboardImg,
     title: "DevDashboard",
-    description: "A modern, responsive multi-API dashboard",
+    description: "A modern, responsive multi-API dashboard.",
     languages: ["React", "TailwindCSS", "Javascript", "SwiperJS"],
   },
 ];
