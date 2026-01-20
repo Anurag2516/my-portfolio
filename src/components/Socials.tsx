@@ -1,15 +1,23 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const Socials = () => {
+interface sizeProp {
+  size?: number;
+  colors?: string;
+}
+
+const Socials = ({ size = 22, colors = "" }: sizeProp) => {
   return (
-    <div className="flex gap-4">
+    <div className={`flex gap-5 ${colors}`}>
       <a
         href="https://github.com/Anurag2516/"
         aria-label="Github link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub size={22} />
+        <FaGithub
+          size={size}
+          className="hover:scale-110 transition-all duration-200 ease-out"
+        />
       </a>
       <a
         href="https://linkedin.com/in/anurag2516"
@@ -17,14 +25,20 @@ const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin size={22} />
+        <FaLinkedin
+          size={size}
+          className="hover:scale-110 transition-all duration-200 ease-out"
+        />
       </a>
       <a
         href="mailto:anuragyadav2516@gmail.com"
         aria-label="Send email"
         title="Send email"
       >
-        <FaEnvelope size={22} />
+        <FaEnvelope
+          size={size}
+          className="hover:scale-110 transition-all duration-200 ease-out"
+        />
       </a>
     </div>
   );
