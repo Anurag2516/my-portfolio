@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="text-white/90 text-4xl sm:text-5xl font-extrabold tracking-tight uppercase">
               Anurag Yadav
             </h1>
-            <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 items-start sm:items-center text-white/60">
+            <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 items-start sm:items-center text-gray-400">
               <h2 className="text-lg">Frontend Developer</h2>
               <div className="shrink-0 w-px bg-white h-4 hidden sm:block"></div>
               <div className="flex items-center gap-1 justify-center">
@@ -22,11 +22,8 @@ const Hero = () => {
           </div>
           <p className="md:max-w-112.5 text-left text-lg/7 text-white/95 w-full tracking-wide line">
             I build fast and modern web applications with{" "}
-            <span className="font-bold text-white text-[19.5px]">React</span>{" "}
-            and{" "}
-            <span className="font-bold text-white text-[19.5px]">
-              TypeScript
-            </span>
+            <span className="font-bold text-[19.5px]">React</span> and{" "}
+            <span className="font-bold text-[19.5px]">TypeScript</span>
             .
             <br />
             Focused on clean code and great user experience.
@@ -34,7 +31,7 @@ const Hero = () => {
           <div className="flex flex-wrap items-center gap-5">
             <button
               type="button"
-              className="px-4 py-3 bg-btn-bg hover:bg-btn-accent border border-btn-accent cursor-pointer hover:scale-105 transition-all duration-300 ease-out text-white text-base font-semibold rounded-lg"
+              className="px-4 py-3 bg-btn-bg-dark hover:bg-btn-accent-dark border border-btn-accent-dark cursor-pointer hover:scale-105 transition-all duration-300 ease-out text-base font-semibold rounded-lg"
             >
               View Projects
             </button>
