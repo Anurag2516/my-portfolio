@@ -9,6 +9,7 @@ export interface ProjectConfig {
   title: string;
   description: string;
   languages: string[];
+  liveLink: string;
   bentoVertical?: boolean;
 }
 
@@ -20,6 +21,7 @@ export const projectsData: ProjectConfig[] = [
     title: "DeployForge",
     description: "A fully responsive, production-grade SaaS landing page.",
     languages: ["React", "TailwindCSS", "Javascript", "Motion"],
+    liveLink: "https://deployforge.netlify.app/",
     bentoVertical: true,
   },
   {
@@ -29,6 +31,7 @@ export const projectsData: ProjectConfig[] = [
     title: "DevDashboard",
     description: "A modern, responsive multi-API dashboard.",
     languages: ["React", "TailwindCSS", "Javascript", "SwiperJS"],
+    liveLink: "https://devdashboard-project.netlify.app/",
   },
   {
     id: "blogVerseBlog",
@@ -37,5 +40,6 @@ export const projectsData: ProjectConfig[] = [
     title: "BlogVerse",
     description: "A simple and clean blog application.",
     languages: ["React", "TailwindCSS", "Javascript", "Lottie"],
+    liveLink: "https://blog-verse-react.netlify.app/",
   },
 ];
