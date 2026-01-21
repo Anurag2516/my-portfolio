@@ -12,7 +12,7 @@ const SkillCards = ({ card }: CardsProps) => {
       <div className="flex flex-col gap-3 mb-3">
         <div className="flex items-center gap-3">
           <div className="text-primary">{card.icon}</div>
-          <h1 className="text-2xl font-bold">{card.title}</h1>
+          <h1 className="text-xl lg:text-2xl font-bold">{card.title}</h1>
         </div>
         <p className="text-base text-gray-400 font-medium">{card.description}</p>
       </div>
@@ -21,7 +21,7 @@ const SkillCards = ({ card }: CardsProps) => {
           return (
             <ul
               key={index}
-              className="list-disc space-y-2 pl-6 text-base text-white font-semibold"
+              className="list-disc space-y-2 pl-6 text-base text-white font-normal sm:font-semibold"
             >
               {block.items.map((item) => (
                 <li key={item}>{item}</li>
@@ -33,9 +33,9 @@ const SkillCards = ({ card }: CardsProps) => {
         if (block.type === "labeled-list") {
           return (
             <ul key={index} className="mt-3 pl-6">
-              <li className="list-disc text-lg text- font-semibold">
+              <li className="list-disc text-lg font-semibold">
                 {block.label}:
-                <p className="text-base text-gray-400 font-semibold">
+                <p className="text-base text-gray-400 font-normal sm:font-semibold">
                   {block.items.join(", ")}
                 </p>
               </li>
