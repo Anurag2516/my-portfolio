@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  --color-background-color: #0b0b0f;
-  --color-primary: #6d3fc9;
-  --color-secondary: #22D3EE;
-  --background-image-radial-purple: radial-gradient(
-    circle at center,
-    rgba(139, 92, 246, 0.3),
-    transparent 50%
-  );
+  --color-btn-bg-dark: hsl(0 0% 100% / 0.15);
+  --color-btn-accent-dark: hsl(240 5.3% 26.1%);
+  --color-form-bg-dark: hsl(0 0% 100% / 0.05);
+  --color-form-border-dark: hsl(0 0% 100% / 0.3);
 }
 
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
 }
 
-body, p, a, li, input, textarea, button {
-    font-family: 'Inter', sans-serif;
+body,
+p,
+a,
+li,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
 }
