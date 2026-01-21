@@ -11,7 +11,7 @@ const SkillCards = ({ card }: CardsProps) => {
     >
       <div className="flex flex-col gap-3 mb-3">
         <div className="flex items-center gap-3">
-          <div className="text-primary">{card.icon}</div>
+          <div className="text-purple-700">{card.icon}</div>
           <h1 className="text-xl lg:text-2xl font-bold">{card.title}</h1>
         </div>
         <p className="text-base text-gray-400 font-medium">{card.description}</p>
@@ -21,7 +21,7 @@ const SkillCards = ({ card }: CardsProps) => {
           return (
             <ul
               key={index}
-              className="list-disc space-y-2 pl-6 text-base text-white font-normal sm:font-semibold"
+              className="list-disc space-y-2 pl-6 text-base font-normal sm:font-semibold"
             >
               {block.items.map((item) => (
                 <li key={item}>{item}</li>
