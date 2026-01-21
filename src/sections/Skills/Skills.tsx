@@ -1,20 +1,22 @@
 import { skillCardsConifg } from "./SkillCards.data";
-import  SkillCards  from "./SkillCards";
+import SkillCards from "./SkillCards";
 
 const Skills = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto">
-      <div className="flex flex-col gap-2 ">
-        <h1 className="font-bold text-3xl ">Crafting Modern Web Interfaces</h1>
-        <p className="font-normal text-lg text-gray-400">
-          I focus on building modern, responsive front-end interfaces and
-          developing reliable web applications using current technologies.
-        </p>
-      </div>
-      <div className="grid grid-cols-3 gap-6 pt-10">
-        {skillCardsConifg.map((card) => (
-          <SkillCards key={card.id} card={card} />
-        ))}
+    <section className="border-t border-t-white/15 py-16 sm:py-20 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0">
+      <div className="max-w-6xl w-full mx-auto">
+        <div className="flex flex-col gap-2 ">
+          <h1 className="font-bold text-2xl sm:text-3xl">What I Do</h1>
+          <p className="font-normal text-base sm:text-lg text-gray-400">
+            I build responsive websites and web applications that work
+            seamlessly across all devices.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
+          {skillCardsConifg.map((card) => (
+            <SkillCards key={card.id} card={card} />
+          ))}
+        </div>
       </div>
     </section>
   );
