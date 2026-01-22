@@ -1,10 +1,10 @@
-import Home from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-black/97 text-white overflow-hidden">
-      <Home />
+    <div className="min-h-screen bg-slate-50 text-black/97 dark:bg-black/97 dark:text-white overflow-hidden">
+      <HomePage />
     </div>
   );
 }

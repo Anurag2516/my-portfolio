@@ -20,7 +20,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <p className="md:max-w-112.5 text-left text-lg/7  dark:text-white/95 w-full tracking-wide line">
+          <p className="md:max-w-112.5 text-left text-lg/7 text-gray-700 dark:text-white/95 w-full tracking-wide line">
             I build fast and modern web applications with{" "}
             <span className="font-bold text-[19.5px]">React</span> and{" "}
             <span className="font-bold text-[19.5px]">TypeScript</span>

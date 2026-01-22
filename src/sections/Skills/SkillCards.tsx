@@ -6,15 +6,15 @@ interface CardsProps {
 
 const SkillCards = ({ card }: CardsProps) => {
   return (
-    <div
-      className="rounded-xl border border-white/10 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-xl px-4 py-8"
-    >
+    <div className="rounded-xl border border-black/20 shadow-md dark:border-white/10 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-xl px-4 py-8">
       <div className="flex flex-col gap-3 mb-3">
         <div className="flex items-center gap-3">
           <div className="text-purple-700">{card.icon}</div>
           <h1 className="text-xl lg:text-2xl font-bold">{card.title}</h1>
         </div>
-        <p className="text-base text-gray-400 font-medium">{card.description}</p>
+        <p className="text-base text-gray-600 dark:text-gray-400 font-medium">
+          {card.description}
+        </p>
       </div>
       {card.blocks.map((block, index) => {
         if (block.type === "list") {
@@ -35,7 +35,7 @@ const SkillCards = ({ card }: CardsProps) => {
             <ul key={index} className="mt-3 pl-6">
               <li className="list-disc text-lg font-semibold">
                 {block.label}:
-                <p className="text-base text-gray-400 font-normal sm:font-semibold">
+                <p className="text-base text-gray-600 dark:text-gray-400 font-normal sm:font-semibold">
                   {block.items.join(", ")}
                 </p>
               </li>

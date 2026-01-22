@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-10">
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-2xl sm:text-3xl">Featured Projects</h1>
-          <p className="font-normal text-base sm:text-lg text-gray-400">
+          <p className="font-normal text-base sm:text-lg text-gray-600 dark:text-gray-400">
             Selected projects showcasing my approach to front-end development.
           </p>
         </div>
@@ -34,7 +34,7 @@ const Projects = () => {
         <div className="flex justify-end">
           <button
             type="button"
-            className="flex items-center gap-2 px-4 py-3 bg-btn-bg-dark hover:bg-btn-accent-dark border border-btn-accent-dark cursor-pointer hover:scale-105 transition-all duration-200 ease-out rounded-lg"
+            className="flex items-center gap-2 px-4 py-3 bg-white hover:bg-gray-200 dark:bg-btn-bg-dark dark:hover:bg-btn-accent-dark dark:border dark:border-btn-accent-dark shadow-box dark:shadow-none hover:shadow-box-hover cursor-pointer hover:scale-105 transition-all duration-200 ease-out rounded-lg"
           >
             <FolderKanban size={20} />
             <span className="text-sm sm:text-base font-bold">
