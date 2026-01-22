@@ -9,6 +9,12 @@
   --color-btn-accent-dark: hsl(240 5.3% 26.1%);
   --color-form-bg-dark: hsl(0 0% 100% / 0.05);
   --color-form-border-dark: hsl(0 0% 100% / 0.3);
+  --shadow-box:
+    0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 12px 24px rgba(0, 0, 0, 0.1);
+  --shadow-box-hover:
+    0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.12),
+    0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
 h1,
