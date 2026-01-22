@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-btn-bg-dark: hsl(0 0% 100% / 0.15);
   --color-btn-accent-dark: hsl(240 5.3% 26.1%);
