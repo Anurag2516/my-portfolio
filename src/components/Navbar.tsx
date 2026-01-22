@@ -37,9 +37,9 @@ const Navbar=() =>{
           <FolderKanban size={21} />
         </a>
         <a
-          href="#"
-          aria-label="Contact"
-          rel="noopener noreferrer"
+          href="mailto:anuragyadav2516@gmail.com"
+          aria-label="Send email"
+          title="Send email"
           className="p-2 rounded transition-all duration-200 hover:bg-gray-200 dark:hover:bg-white/10"
         >
           <Mail size={21} />
