@@ -22,8 +22,12 @@ jobs:
       - run: npm run build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
 
-      - uses: appleboy/scp-action@v0.1.7
+      - name: Deploy to Hostinger via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
           username: ${{ secrets.HOSTINGER_USER }}
@@ -31,4 +35,16 @@ jobs:
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "dist/*"
           target: "/home/${{ secrets.HOSTINGER_USER }}/public_html"
-          rm: true
+          strip_components: 1
+          rm: false
+
+      - name: Clean up deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            cd ~/public_html
+            ls -la
