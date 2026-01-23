@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex justify-center items-center mt-12 sm:mt-0 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0 overflow-hidden">
+    <section className="relative min-h-screen flex justify-center items-center my-12 sm:mt-0 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0 overflow-hidden">
       <div className="flex flex-col-reverse md:flex-row justify-center items-start gap-6 md:gap-14 w-full">
         <div className="flex flex-col gap-6 items-start">
           <div className="flex flex-col gap-2">
@@ -20,7 +20,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <p className="md:max-w-112.5 text-left text-lg/7 text-gray-700 dark:text-white/95 w-full tracking-wide line">
+          <p className="md:max-w-112.5 text-left text-lg/7 text-gray-700 dark:text-white/95 w-full tracking-wide">
             I build fast and modern web applications with{" "}
             <span className="font-bold text-[19.5px]">React</span> and{" "}
             <span className="font-bold text-[19.5px]">TypeScript</span>
