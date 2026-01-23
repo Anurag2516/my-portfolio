@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { House, FolderKanban, Mail, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 
-const Navbar=() =>{
-
+const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   const [isHovered, setIsHovered] = useState(false);
@@ -19,23 +19,20 @@ const Navbar=() =>{
           isHovered ? "gap-5" : "gap-3"
         }`}
       >
-        <a
-          href="#"
+        <Link
+          to="/"
           aria-label="Home"
-          target="_blank"
-          rel="noopener noreferrer"
           className="p-2 rounded transition-all duration-200 hover:scale-110 hover:bg-gray-200 dark:hover:bg-white/10"
         >
           <House size={21} />
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/projects"
           aria-label="Projects"
-          rel="noopener noreferrer"
           className="p-2 rounded transition-all duration-200 hover:bg-gray-200 dark:hover:bg-white/10"
         >
           <FolderKanban size={21} />
-        </a>
+        </Link>
         <a
           href="mailto:anuragyadav2516@gmail.com"
           aria-label="Send email"
@@ -55,5 +52,5 @@ const Navbar=() =>{
       </div>
     </div>
   );
-}
-export default Navbar
+};
+export default Navbar;

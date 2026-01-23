@@ -1,6 +1,7 @@
 import Socials from "../components/Socials";
 import heroPic from "../assets/heroPic.jpeg";
 import { MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,12 +30,12 @@ const Hero = () => {
             Focused on clean code and great user experience.
           </p>
           <div className="flex flex-wrap items-center gap-5">
-            <button
-              type="button"
+            <Link
+              to='/projects'
               className="px-4 py-3 bg-white hover:bg-gray-200 dark:bg-btn-bg-dark dark:hover:bg-btn-accent-dark dark:border dark:border-btn-accent-dark shadow-box dark:shadow-none hover:shadow-box-hover cursor-pointer hover:scale-105 transition-all duration-300 ease-out text-base font-semibold rounded-lg"
             >
               View Projects
-            </button>
+            </Link>
             <Socials
               size={23}
               colors="[&_svg]:text-black/85 [&_svg]:hover:text-black dark:[&_svg]:text-white/90 dark:[&_svg]:hover:text-white/60"

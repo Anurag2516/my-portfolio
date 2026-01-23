@@ -1,8 +1,10 @@
 import { FolderKanban } from "lucide-react";
 import { projectsData, type ProjectConfig } from "../data/Projects.data";
 import ProjectsCard from "../components/cards/ProjectCard";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
+   
   const featuredProjects: ProjectConfig[] = projectsData.filter(
     (project) => project.featured === true,
   );
@@ -32,15 +34,15 @@ const Projects = () => {
           ))}
         </div>
         <div className="flex justify-end">
-          <button
-            type="button"
+          <Link
+            to="/projects"
             className="flex items-center gap-2 px-4 py-3 bg-white hover:bg-gray-200 dark:bg-btn-bg-dark dark:hover:bg-btn-accent-dark dark:border dark:border-btn-accent-dark shadow-box dark:shadow-none hover:shadow-box-hover cursor-pointer hover:scale-105 transition-all duration-200 ease-out rounded-lg"
           >
             <FolderKanban size={20} />
             <span className="text-sm sm:text-base font-bold">
               View All Projects
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

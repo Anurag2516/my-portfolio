@@ -2,6 +2,7 @@ import { projectsData } from "../data/Projects.data";
 import ProjectPageCard from "../components/cards/ProjectListCard";
 
 const ProjectsPage = () => {
+   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <section className="mt-20 sm:my-36 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-10">
