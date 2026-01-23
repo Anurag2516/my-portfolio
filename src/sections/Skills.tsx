@@ -1,5 +1,5 @@
-import { skillCardsConifg } from "./SkillCards.data";
-import SkillCards from "./SkillCards";
+import { skillCardsConifg } from "../data/SkillCards.data";
+import SkillCards from "../components/cards/SkillCard";
 
 const Skills = () => {
   return (

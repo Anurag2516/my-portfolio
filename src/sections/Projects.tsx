@@ -1,6 +1,6 @@
 import { FolderKanban } from "lucide-react";
-import { projectsData, type ProjectConfig } from "./Projects.data";
-import ProjectsCard from "./ProjectsCard";
+import { projectsData, type ProjectConfig } from "../data/Projects.data";
+import ProjectsCard from "../components/cards/ProjectCard";
 
 const Projects = () => {
   const featuredProjects: ProjectConfig[] = projectsData.filter(

@@ -1,4 +1,4 @@
-import { type CardsConfig } from "./SkillCards.data";
+import { type CardsConfig } from "../../data/SkillCards.data";
 
 interface CardsProps {
   card: CardsConfig;

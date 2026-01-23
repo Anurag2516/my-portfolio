@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../sections/Hero";
-import Projects from "../sections/Projects/Projects";
-import Skills from "../sections/Skills/Skills";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
 import Footer from "../components/Footer";
 import Contact from "../sections/Contact";
 
