@@ -1,6 +1,6 @@
-import blogVerseHomeImg from "../assets/blogVerseHome.png";
-import deployForgeImg from "../assets/deployForge.png";
-import devDashboardImg from "../assets/devDashboard.png";
+import blogVerseHomeImg from "../assets/blogVerseHome.webp";
+import deployForgeImg from "../assets/deployForge.webp";
+import devDashboardImg from "../assets/devDashboard.webp";
 
 export interface ProjectConfig {
   id: string;
