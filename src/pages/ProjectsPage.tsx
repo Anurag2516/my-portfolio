@@ -1,5 +1,5 @@
 import { projectsData } from "../data/Projects.data";
-import ProjectsCard from "../components/cards/ProjectCard";
+import ProjectPageCard from "../components/cards/ProjectListCard";
 
 const ProjectsPage = () => {
   return (
@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-x-4 lg:gap-y-6">
           {projectsData.map((project) => (
-            <ProjectsCard key={project.id} project={project} />
+            <ProjectPageCard key={project.id} project={project} />
           ))}
         </div>
       </div>
