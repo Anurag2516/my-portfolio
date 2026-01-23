@@ -10,7 +10,7 @@ const Navbar=() =>{
 
   return (
     <div
-      className="max-w-fit fixed inset-x-0 mx-auto z-50 bg-white/60 backdrop-blur-md dark:bg-zinc-900 shadow-box dark:shadow-none rounded-xl mt-2"
+      className="max-w-fit fixed bottom-4 sm:top-4 sm:bottom-auto inset-x-0 mx-auto z-50 bg-white/60 backdrop-blur-md dark:bg-zinc-900 shadow-box dark:shadow-none rounded-xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -44,7 +44,7 @@ const Navbar=() =>{
         >
           <Mail size={21} />
         </a>
-        <div className="shrink-0 w-px bg-black dark:bg-white h-4 hidden sm:block"></div>
+        <div className="shrink-0 w-px bg-black dark:bg-white h-4"></div>
         <button
           type="button"
           onClick={toggleTheme}
