@@ -12,7 +12,7 @@ const ProjectsPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-x-4 lg:gap-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 lg:gap-x-4 lg:gap-y-6">
           {projectsData.map((project) => (
             <ProjectPageCard key={project.id} project={project} />
           ))}
