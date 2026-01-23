@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative h-screen flex justify-center items-center mt-12 sm:mt-0 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0 overflow-hidden">
-      <div className="flex flex-col-reverse md:flex-row justify-center items-start gap-6 md:gap-16 w-full">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-start gap-6 md:gap-14 w-full">
         <div className="flex flex-col gap-6 items-start">
           <div className="flex flex-col gap-2">
             <h1 className="dark:text-white/90 text-4xl sm:text-5xl font-extrabold tracking-tight uppercase">
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
         <img
           src={heroPic}
-          alt="ok"
+          alt="hero-image"
           className="w-32 md:w-45 h-32 md:h-45 object-cover rounded-full"
         />
       </div>
