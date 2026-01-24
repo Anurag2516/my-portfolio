@@ -2,7 +2,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div className="border-t border-t-black/20 dark:border-t-white/15 mt-20 py-12 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0">
+    <footer className="border-t border-t-black/20 dark:border-t-white/15 mt-20 py-12 px-5 sm:px-10 md:px-14 lg:px-20 xl:px-0">
       <div className="max-w-6xl w-full mx-auto">
         <div className="flex flex-col justify-start items-start gap-4 sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-3">
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
