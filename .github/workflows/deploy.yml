@@ -26,19 +26,18 @@ jobs:
           VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
           VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
 
-      - name: Deploy to Hostinger via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy via rsync
+        uses: easingthemes/ssh-deploy@main
         with:
-          host: ${{ secrets.HOSTINGER_HOST }}
-          username: ${{ secrets.HOSTINGER_USER }}
-          key: ${{ secrets.HOSTINGER_SSH_KEY }}
-          port: ${{ secrets.HOSTINGER_PORT }}
-          source: "dist/*"
-          target: "/home/${{ secrets.HOSTINGER_USER }}/public_html"
-          strip_components: 1
-          rm: false
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
+          REMOTE_USER: ${{ secrets.HOSTINGER_USER }}
+          REMOTE_PORT: ${{ secrets.HOSTINGER_PORT }}
+          SOURCE: "dist/"
+          TARGET: "/home/${{ secrets.HOSTINGER_USER }}/public_html/"
+          EXCLUDE: "/dist/, /node_modules/"
 
-      - name: Clean up deployment
+      - name: Verify deployment
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
@@ -46,5 +45,7 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            cd ~/public_html
-            ls -la
+            echo "=== Contents of public_html ==="
+            ls -la ~/public_html/
+            echo "=== index.html check ==="
+            test -f ~/public_html/index.html && echo "index.html EXISTS" || echo "index.html MISSING"
