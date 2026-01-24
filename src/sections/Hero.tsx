@@ -45,6 +45,7 @@ const Hero = () => {
         <img
           src={heroPic}
           alt="hero-image"
+          loading="lazy"
           className="w-32 md:w-45 h-32 md:h-45 object-cover rounded-full"
         />
       </div>
