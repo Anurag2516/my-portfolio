@@ -33,7 +33,7 @@ jobs:
           REMOTE_USER: ${{ secrets.HOSTINGER_USER }}
           REMOTE_PORT: ${{ secrets.HOSTINGER_PORT }}
           SOURCE: "dist/"
-          TARGET: "/home/${{ secrets.HOSTINGER_USER }}/public_html/"
+          TARGET: "/home/${{ secrets.HOSTINGER_USER }}/domains/anuragyadav.io/public_html/"
           EXCLUDE: "/dist/, /node_modules/"
 
       - name: Verify deployment
@@ -44,7 +44,7 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            echo "=== Contents of public_html ==="
-            ls -la ~/public_html/
+            echo "=== Contents of anuragyadav.io public_html ==="
+            ls -la ~/domains/anuragyadav.io/public_html/
             echo "=== index.html check ==="
-            test -f ~/public_html/index.html && echo "index.html EXISTS" || echo "index.html MISSING"
+            test -f ~/domains/anuragyadav.io/public_html/index.html && echo "index.html EXISTS" || echo "index.html MISSING"
