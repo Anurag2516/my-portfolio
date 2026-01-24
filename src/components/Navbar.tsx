@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
+    <header
       className="max-w-fit fixed bottom-4 sm:top-4 sm:bottom-auto inset-x-0 mx-auto z-50 bg-white/60 backdrop-blur-md dark:bg-zinc-900 shadow-box dark:shadow-none rounded-xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -50,7 +50,7 @@ const Navbar = () => {
           {theme === "dark" ? <Sun size={21} /> : <Moon size={21} />}
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 export default Navbar;
