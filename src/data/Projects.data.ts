@@ -1,6 +1,6 @@
 import blogVerseHomeImg from "../assets/blogVerseHome.webp";
 import deployForgeImg from "../assets/deployForge.webp";
-import devDashboardImg from "../assets/devDashboard.webp";
+import invioImg from "../assets/invio.webp";
 
 export interface ProjectConfig {
   id: string;
@@ -25,13 +25,14 @@ export const projectsData: ProjectConfig[] = [
     bentoVertical: true,
   },
   {
-    id: "devDashboard",
+    id: "invio",
     featured: true,
-    image: devDashboardImg,
-    title: "DevDashboard",
-    description: "A modern, responsive multi-API dashboard.",
-    languages: ["React", "TailwindCSS", "Javascript", "SwiperJS"],
-    liveLink: "https://devdashboard-project.netlify.app/",
+    image: invioImg,
+    title: "Invio",
+    description:
+      "Create, manage, and export invoices as PDF - with a live preview as you type.",
+    languages: ["React", "TypeScript", "TailwindCSS", "Shadcn", "Zustand"],
+    liveLink: "https://invio-eight.vercel.app/",
   },
   {
     id: "blogVerseBlog",
