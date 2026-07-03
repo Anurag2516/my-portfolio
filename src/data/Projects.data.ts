@@ -14,7 +14,7 @@ export interface ProjectConfig {
 }
 
 export const projectsData: ProjectConfig[] = [
-  {
+ /* {
     id: "deployForge",
     featured: true,
     image: deployForgeImg,
@@ -23,7 +23,7 @@ export const projectsData: ProjectConfig[] = [
     languages: ["React", "TailwindCSS", "Javascript", "Motion"],
     liveLink: "https://deployforge.netlify.app/",
     bentoVertical: true,
-  },
+  },*/
   {
     id: "invio",
     featured: true,
