@@ -1,5 +1,4 @@
 import blogVerseHomeImg from "../assets/blogVerseHome.webp";
-import deployForgeImg from "../assets/deployForge.webp";
 import invioImg from "../assets/invio.webp";
 
 export interface ProjectConfig {
