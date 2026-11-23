@@ -33,7 +33,7 @@ const ProjectsCard = ({ project }: ProjectsProps) => {
           {project.languages.map((lang, index) => (
             <div
               key={index}
-              className="bg-purple-400 rounded-full px-2 py-1 text-xs"
+              className="bg-purple-500/80 rounded-full px-2 py-1 text-xs"
             >
               {lang}
             </div>
