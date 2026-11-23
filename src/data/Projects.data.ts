@@ -1,5 +1,5 @@
 import blogVerseHomeImg from "../assets/blogVerseHome.webp";
-import invioImg from "../assets/invio.webp";
+import invioImg from "../assets/invio.png";
 
 export interface ProjectConfig {
   id: string;
